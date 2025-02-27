@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Multiple Links</title>
+</head>
+<body>
+    <a href="#" onclick="openLinks()">Click here to open all links</a>
+
+    <script>
+        function openLinks() {
+            const links = [
+                "https://calendly.com/margie-63/30min",
+                "https://calendly.com/jonny-lenox-choose-stevens/30min",
+                "https://calendly.com/ann-choosestevens/30-min-insurance-call"
+            ];
+            links.forEach(link => window.open(link, '_blank'));
+        }
+    </script>
+</body>
+</html>
